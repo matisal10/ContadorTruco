@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/carta-cinco-oros-derecha.jpg" />
+    <script src="script/index.js" type="module"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Contador de truco</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <h1>
+        Contador de truco
+    </h1>
+    <div class="jugadoresContainer" id="jugadoresContainer">
+        <div class="jugadorContainer" id="jugador1Container">
+            <div class="botonesJugador">
+                <button class="agregar btn btn-secondary">+</button>
+                <button class="restar btn btn-secondary">-</button>
+            </div>
+            <div style="margin-top: 55px;">
+                <h2>Nosotros</h2>
+            </div>
+            <div class="cuenta"></div>
+        </div>
+        <div class="jugadorContainer" id="jugador2Container">
+            <div class="botonesJugador">
+                <button class="agregar btn btn-secondary">+</button>
+                <button class="restar btn btn-secondary">-</button>
+            </div>
+            <div style="margin-top: 55px;">
+                <h2>Ellos</h2>
+            </div>
+            <div class="cuenta"></div>
+        </div>
+    </div>
+    <button id="reset" class="btn btn-secondary btn-lg">Reset</button>
+    <dialog type="modal">
+        <p>Quieres resetear la partida?</p>
+        <button id="aceptar" class="btn btn-danger">Aceptar</button>
+        <button id="volver" class="btn btn-secondary">Rechazar</button>
+    </dialog>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+
+</html>
